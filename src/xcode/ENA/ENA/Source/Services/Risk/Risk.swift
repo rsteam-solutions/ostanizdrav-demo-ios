@@ -10,6 +10,7 @@ struct Risk: Equatable {
 		var mostRecentDateWithRiskLevel: Date?
 		var numberOfDaysWithRiskLevel: Int
 		var calculationDate: Date?
+		var minimumDistinctEncountersWithCurrentRiskLevel: Int?
 	}
 
 	let level: RiskLevel
@@ -77,7 +78,8 @@ extension Risk {
 		let details = Details(
 			mostRecentDateWithRiskLevel: mostRecentDateWithRiskLevel,
 			numberOfDaysWithRiskLevel: numberOfDaysWithRiskLevel,
-			calculationDate: calculationDate
+			calculationDate: calculationDate,
+			minimumDistinctEncountersWithCurrentRiskLevel: enfRiskCalculationResult.minimumDistinctEncountersWithCurrentRiskLevel
 		)
 
 		self.init(

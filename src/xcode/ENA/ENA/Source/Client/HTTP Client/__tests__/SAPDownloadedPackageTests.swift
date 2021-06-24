@@ -9,7 +9,7 @@ import ZIPFoundation
 
 final class SAPDownloadedPackageTests: XCTestCase {
 
-	private let defaultBundleId = Bundle.main.bundleIdentifier ?? "de.rki.coronawarnapp"
+	private let defaultBundleId = Bundle.main.bundleIdentifier ?? "si.gov.ostanizdrav"
 
 	private lazy var signingKey: PrivateKeyProvider = CryptoProvider.createPrivateKey()
 	private lazy var signatureVerifier: SignatureVerification = {

@@ -75,7 +75,7 @@ extension CoronaWarnURLSessionDelegate: URLSessionDelegate {
 		// we expect a chain of at least 2 certificates
 		// index '1' is the required intermediate
 		if
-			let serverCertificate = SecTrustGetCertificateAtIndex(trust, 1),
+			let serverCertificate = SecTrustGetCertificateAtIndex(trust, 0),
 			let serverPublicKey = SecCertificateCopyKey(serverCertificate),
 			let serverPublicKeyData = SecKeyCopyExternalRepresentation(serverPublicKey, nil ) as Data? {
 

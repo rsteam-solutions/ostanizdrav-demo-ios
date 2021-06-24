@@ -14,7 +14,7 @@ import CryptoKit
 extension SAPDownloadedPackage {
 
 	/// - note: Will SHA256 hash the data
-	static func makeSignature(data: Data, key: PrivateKeyProvider, bundleId: String = "de.rki.coronawarnapp") throws -> SAP_External_Exposurenotification_TEKSignature {
+	static func makeSignature(data: Data, key: PrivateKeyProvider, bundleId: String = "si.gov.ostanizdrav") throws -> SAP_External_Exposurenotification_TEKSignature {
 		var signature = SAP_External_Exposurenotification_TEKSignature()
 		signature.signature = try key.signature(for: data).derRepresentation
 		signature.signatureInfo = makeSignatureInfo(bundleId: bundleId)
@@ -22,7 +22,7 @@ extension SAPDownloadedPackage {
 		return signature
 	}
 
-	static func makeSignatureInfo(bundleId: String = "de.rki.coronawarnapp") -> SAP_External_Exposurenotification_SignatureInfo {
+	static func makeSignatureInfo(bundleId: String = "si.gov.ostanizdrav") -> SAP_External_Exposurenotification_SignatureInfo {
 		var info = SAP_External_Exposurenotification_SignatureInfo()
 		info.appBundleID = bundleId
 

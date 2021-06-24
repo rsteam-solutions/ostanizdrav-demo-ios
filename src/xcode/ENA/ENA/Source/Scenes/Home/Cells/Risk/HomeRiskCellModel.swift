@@ -246,7 +246,7 @@ class HomeRiskCellModel: CountdownTimerDelegate {
 	}
 
 	private func setupForLowRiskState(risk: Risk) {
-		backgroundColor = .enaColor(for: .riskLow)
+		backgroundColor = .enaColor(for: (risk.details.minimumDistinctEncountersWithCurrentRiskLevel ?? 0) > 0 ? .riskMedium : .riskLow)
 		separatorColor = .enaColor(for: .hairlineContrast)
 
 		title = AppStrings.Home.riskCardLowTitle

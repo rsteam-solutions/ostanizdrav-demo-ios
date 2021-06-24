@@ -15,7 +15,7 @@ public enum ActionableNotificationIdentifier: String {
 	case antigenWarnOthersReminder2 = "antigen-warn-others-reminder-2"
 
 	var identifier: String {
-		let bundleIdentifier = Bundle.main.bundleIdentifier ?? "de.rki.coronawarnapp"
+		let bundleIdentifier = Bundle.main.bundleIdentifier ?? "si.gov.ostanizdrav"
 		return "\(bundleIdentifier).\(rawValue)"
 	}
 }

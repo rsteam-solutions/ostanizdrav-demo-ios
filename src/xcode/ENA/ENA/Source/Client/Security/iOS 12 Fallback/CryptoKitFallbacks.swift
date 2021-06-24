@@ -96,7 +96,7 @@ struct PrivateKey {
 	}
 
 	/// Our defaul tag for all keys
-	private let defaultBundleId = Bundle.main.bundleIdentifier ?? "de.rki.coronawarnapp"
+	private let defaultBundleId = Bundle.main.bundleIdentifier ?? "si.gov.ostanizdrav"
 
 	/// Internal reference to the 'real' key
 	private let privateKey: SecKey
@@ -104,7 +104,7 @@ struct PrivateKey {
 	/// Generates a new private key with a SHA-256 ECDSA algorithm.
 	///
 	/// - Parameter tag: Consider this an identifier. Defaults to the main bundle identifier if present or "de.rki.coronawarnapp"
-	init(tag: String = (Bundle.main.bundleIdentifier ?? "de.rki.coronawarnapp")) throws {
+	init(tag: String = (Bundle.main.bundleIdentifier ?? "si.gov.ostanizdrav")) throws {
 		// https://developer.apple.com/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values#1679067
 		let attributes: [String: Any] = [
 			kSecAttrKeyType as String: kSecAttrKeyTypeECSECPrimeRandom,

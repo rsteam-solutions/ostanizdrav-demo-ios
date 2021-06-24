@@ -13,13 +13,9 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>de.rki.coronawarnapp</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
-	<key>ENDeveloperRegion</key>
-	<string>DE</string>
-	<key>ENAPIVersion</key>
-	<integer>2</integer>
 	<key>CFBundleName</key>
 	<string>ENA</string>
 	<key>CFBundlePackageType</key>
@@ -28,6 +24,10 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ENAPIVersion</key>
+	<integer>2</integer>
+	<key>ENDeveloperRegion</key>
+	<string>SI</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>

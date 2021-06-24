@@ -118,7 +118,7 @@ class ExposureDetectionViewModel: CountdownTimerDelegate {
 	var riskTintColor: UIColor {
 		switch homeState.riskState {
 		case .risk(let risk):
-			return risk.level.tintColor
+			return risk.level == .low && (risk.details.minimumDistinctEncountersWithCurrentRiskLevel ?? 0) > 0 ? .enaColor(for: .riskMedium) : risk.level.tintColor
 		case .inactive, .detectionFailed:
 			return .enaColor(for: .riskNeutral)
 		}
@@ -279,7 +279,7 @@ class ExposureDetectionViewModel: CountdownTimerDelegate {
 		titleText = risk.level.text
 		titleTextAccessibilityColor = risk.level.accessibilityRiskColor
 
-		riskBackgroundColor = risk.level.backgroundColor
+		riskBackgroundColor = risk.level == .low && (risk.details.minimumDistinctEncountersWithCurrentRiskLevel ?? 0) > 0 ? .enaColor(for: .riskMedium) : risk.level.backgroundColor
 		titleTextColor = .enaColor(for: .textContrast)
 		closeButtonStyle = .contrast
 

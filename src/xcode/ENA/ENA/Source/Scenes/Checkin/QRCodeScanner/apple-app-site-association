@@ -3,19 +3,19 @@
     "apps": [],
     "details": [
       {
-        "appID": "523TP53AQF.de.rki.corona-warn-app",
+        "appID": "523TP53AQF.si.gov.ostanizdrav",
         "paths": [
           "*"
         ]
       },
       {
-        "appID": "523TP53AQF.de.rki.coronawarnapp-dev",
+        "appID": "523TP53AQF.si.gov.ostanizdrav-dev",
         "paths": [
           "*"
         ]
       },
       {
-        "appID": "523TP53AQF.de.rki.coronawarnapp",
+        "appID": "523TP53AQF.si.gov.ostanizdrav",
         "paths": [
           "*"
         ]

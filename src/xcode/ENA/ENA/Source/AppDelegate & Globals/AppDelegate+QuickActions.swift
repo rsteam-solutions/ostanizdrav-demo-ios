@@ -10,8 +10,8 @@ import AVFoundation
 enum QuickAction: String {
 	
 	/// General identifier for the 'add diary entry' shortcut action
-	case diaryNewEntry = "de.rki.coronawarnapp.shortcut.diarynewentry"
-	case eventCheckin = "de.rki.coronawarnapp.shortcut.eventcheckin"
+	case diaryNewEntry = "si.gov.ostanizdrav.shortcut.diarynewentry"
+	case eventCheckin = "si.gov.ostanizdrav.shortcut.eventcheckin"
 	
 	static var exposureSubmissionFlowTestResult: TestResult?
 	

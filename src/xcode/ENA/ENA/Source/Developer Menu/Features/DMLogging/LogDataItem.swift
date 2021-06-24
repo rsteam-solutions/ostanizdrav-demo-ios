@@ -80,7 +80,7 @@ class LogDataItem: NSObject, UIActivityItemSource {
 	}
 
 	func activityViewController(_ activityViewController: UIActivityViewController, dataTypeIdentifierForActivityType activityType: UIActivity.ActivityType?) -> String {
-		return "de.rki.coronawarnapp.log"
+		return "si.gov.ostanizdrav.log"
 	}
 
 	func activityViewController(_ activityViewController: UIActivityViewController, thumbnailImageForActivityType activityType: UIActivity.ActivityType?, suggestedSize size: CGSize) -> UIImage? {
